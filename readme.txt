@@ -1,2 +1,1 @@
-Creacion del repositorio.
-
+Esta es la practica 1 de seebcoq
