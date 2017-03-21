@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Fast Food</title>
-<link rel="stylesheet" type="text/css" href="../css/829.css" />
+<link rel="stylesheet" type="text/css" href="css/829.css" />
 </head>
 <body>
     <div id="wrapper">
