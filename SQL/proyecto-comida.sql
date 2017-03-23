@@ -1,3 +1,4 @@
+
 drop table if exists PERSONA;
 
 create table if not exists PERSONA (
@@ -33,3 +34,10 @@ create table if not exists COMENTARIO (
 	foreign key(idPersona) references PERSONA(idPersona)
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE platillo(
+idAlimento int NOT NULL, 
+idPlatillo int identity,
+precio decimal(19,4)
+);
+
