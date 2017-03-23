@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Fast Food</title>
-<link rel="stylesheet" type="text/css" href="../css/829.css" />
+<link rel="stylesheet" type="text/css" href="css/829.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -40,7 +40,7 @@
            <li><a href="#">Aviso de Privacidad</a></li>
         </ul>
         <div id="logo">
-            <p><img src="3.png" /></p>
+            <p><img src="imgs/seebcoq.png"/></p>
             <p>Creado por SéebCoq 2017</a></p>
         </div>
         </div>

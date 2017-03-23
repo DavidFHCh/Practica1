@@ -21,6 +21,38 @@ create table if not exists PUESTO (
   calificacion double
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+drop table if exists MENU;
+
+create table if not exists MENU(
+  idMenu serial primary key,
+  diaDeLaSemana varchar(15) not null,
+  desayuno_o_comida varchar(15) not null,
+  idPuesto bigint(20),
+  foreign key(idPuesto) references PUESTO(idPuesto)
+);
+
+drop table if exists Menu_Alimento;
+
+CREATE TABLE Menu_Alimento(
+  nIdMenu int identity,
+  nIdAlimento int
+);
+
+drop table if exists ALIMENTO;
+
+CREATE TABLE ALIMENTO(
+  nIdAlimento int identity
+  sNombre varchar(64)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+drop table if exists PLATILLO;
+
+CREATE TABLE PLATILLO(
+  idAlimento int NOT NULL, 
+  idPlatillo int identity,
+  precio decimal(19,4)
+);
+
 drop table if exists COMENTARIO;
 
 create table if not exists COMENTARIO (
@@ -33,27 +65,3 @@ create table if not exists COMENTARIO (
 	foreign key(idPersona) references PERSONA(idPersona)
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE Alimento(
-  nIdAlimento int identity
-  sNombre varchar(64)
-);
-
-
-CREATE TABLE platillo(
-  idAlimento int NOT NULL, 
-  idPlatillo int identity,
-  precio decimal(19,4)
-);
-
-CREATE TABLE Menu_Alimento(
-  nIdMenu int identity,
-  nIdAlimento int
-);
-CREATE TABLE Comentario(
-	idPuesto 		 	int ,
-	idComentario		int,
-	comentario			varchar(500),
-	idPersona			int foreign key references Persona(idPersona),
-	PRIMARY KEY (idPuesto, idComentario)
-);

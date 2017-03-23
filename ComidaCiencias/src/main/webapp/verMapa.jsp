@@ -29,7 +29,7 @@
         </ul>
         <div id="logo"><p>
              Creado por SéebCoq 2017<br>
-            <img src="3.png" /></p>
+            <p><img src="imgs/seebcoq.png"/></p>
            
         </div>
         </div>
