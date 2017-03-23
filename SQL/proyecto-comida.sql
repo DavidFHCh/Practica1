@@ -35,9 +35,19 @@ create table if not exists COMENTARIO (
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE Alimento(
+nIdAlimento int identity
+sNombre varchar(64)
+);
+
+
 CREATE TABLE platillo(
 idAlimento int NOT NULL, 
 idPlatillo int identity,
 precio decimal(19,4)
 );
 
+CREATE TABLE Menu_Alimento(
+nIdMenu int identity,
+nIdAlimento int
+);

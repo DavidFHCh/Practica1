@@ -9,7 +9,6 @@
         <div id="header">
              <a href="#">Ajustes |</a>
             <a href="#">Cerrar Sesión</a>
-           
         </div>
         <div id="navigation">
             <span class="titulo">FAST FOOD</span>
